@@ -19,6 +19,8 @@ go get github.com/xuexin520/xlsx-utils-go
     file.SaveAs("./aaa.xlsx")
 ```
 
+### 方法
+
 ```go
 note
     sheetName 	文件sheet名称
