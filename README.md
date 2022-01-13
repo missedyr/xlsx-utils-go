@@ -23,19 +23,19 @@ go get github.com/xuexin520/xlsx-utils-go
 
 ```go
 note
-    sheetName 	文件sheet名称
-    titles 	第一行 标题
-    data 		要插入文档的数据 每格值为string
+    sheetName   文件sheet名称
+    titles      第一行 标题
+    data        要插入文档的数据 每格值为string
 
 func CreateFileBySliceString(sheetName string, titles []string, data [][]string) (*xlsx.File, error)
 ```
 
 ```go
 note
-    sheetName 	文件sheet名称 默认值 sheet1
-    titles 		第一行标题    示例 ["姓名", "年龄", "电话"]
-    dataMapKeys  keys值为data的map-key (作用从map中取key的值插入对应title值下  title值和mapKeys值对应关系)  示例 ["name", "age", "phone"]
-    data 		要插入文档的数据 每格值为map (会将map的value值写入表格) 示例 [{"name"="miss", "age"=18, "phone"="12345678901"}]
+    sheetName   文件sheet名称 默认值 sheet1
+    titles      第一行标题    示例 ["姓名", "年龄", "电话"]
+    dataMapKeys keys值为data的map-key (作用从map中取key的值插入对应title值下  title值和mapKeys值对应关系)  示例 ["name", "age", "phone"]
+    data        要插入文档的数据 每格值为map (会将map的value值写入表格) 示例 [{"name"="miss", "age"=18, "phone"="12345678901"}]
 
 func CreateFileBySliceMap(sheetName string, titles, dataMapKeys []string, data []map[string]interface{}) (*xlsx.File, error)
 ```
