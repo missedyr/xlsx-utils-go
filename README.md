@@ -3,7 +3,7 @@ xlsx常用模式function封装 -- go版本
 
 ### 安装
 
-go get github.com/xuexin520/xlsx-utils-go
+go get github.com/missedyr/xlsx-utils-go
 
 ### 使用
 
